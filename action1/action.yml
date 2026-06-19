@@ -1,0 +1,6 @@
+name: action1
+description: This is action1
+runs:
+  using: "composite"
+  steps:
+    - run: echo "This is action1"
