@@ -1,0 +1,11 @@
+name: action2
+description: This is action2
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: View context attributes
+      uses: actions/github-script@v9
+      with:
+        script: console.log(context)
