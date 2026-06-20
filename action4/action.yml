@@ -1,0 +1,14 @@
+name: action3
+description: This is action3
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: View context attributes
+      uses: actions/github-script@v9
+      with:
+        script: |
+          const { default: doStuff } = await import('${{ github.action_path }}/script.js');
+          const result = await doStuff({github, context});
+          console.log(result);
