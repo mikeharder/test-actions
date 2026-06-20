@@ -1,0 +1,9 @@
+{
+  "name": "test-actions",
+  "private": true,
+  "devDependencies": {
+    "@actions/github": "^9.1.1",
+    "@types/node": "^24.0.0",
+    "typescript": "^6.0.3"
+  }
+}
