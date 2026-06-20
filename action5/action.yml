@@ -1,5 +1,5 @@
-name: action4
-description: This is action4
+name: action5
+description: This is action5
 
 runs:
   using: "composite"
@@ -9,6 +9,6 @@ runs:
       uses: actions/github-script@v9
       with:
         script: |
-          const { default: doStuff } = await import('${{ github.action_path }}/script.js');
+          const { default: doStuff } = await import('${{ github.action_path }}/script.ts');
           const result = await doStuff({github, context});
           console.log(result);
